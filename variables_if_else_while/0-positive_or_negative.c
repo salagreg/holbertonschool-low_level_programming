@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - Printf " Task 0"
- *
- * Affecter un nombre aléatoire à la variable
+ * main - Affecter un nombre aléatoire à la variable
+ * Return: Always 0
  */
 int main(void)
 {
