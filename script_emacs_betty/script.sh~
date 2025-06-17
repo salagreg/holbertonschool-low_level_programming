@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "(setq c-default-style \"bsd\"\nc-basic-offset 8\ntab-width 8\nindent-tabs-mode t)" > /root/.emacs
