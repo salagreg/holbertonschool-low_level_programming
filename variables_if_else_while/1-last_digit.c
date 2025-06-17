@@ -31,7 +31,7 @@ int main(void)
 	}
 	else
 	{
-		printf("La valeur de %d est négative\n",n );
+		printf("La valeur de %d est négative\n",n ,last_digit);
 	}
 	return (0);
 }
