@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* En-tête */
-
-/* Affecter un nombre aléatoire a la variable n */
+/**
+ * main - Printf " Task 0"
+ *
+ * Affecter un nombre aléatoire à la variable
+ */
 int main(void)
 {
 int n;
