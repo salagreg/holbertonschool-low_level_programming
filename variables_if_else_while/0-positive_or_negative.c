@@ -6,7 +6,7 @@
 /* Affecter un nombre aléatoire a la variable n */
 int main(void)
 {
-	int n = 65;
+	int n = 0;
 	if (n > 0)
 	{
 	printf("%d is positive\n", n);
