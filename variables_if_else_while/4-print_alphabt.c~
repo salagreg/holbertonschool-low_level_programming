@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+* <nom de la fonction> - <explication de la fonction>
+* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
+* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+*/
+int main(void)
+{
+	char c;
+
+	for (c = 'a' ; c <= 'z' ; c++)
+		if (c != 'e')
+		if (c != 'q')
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
+}
