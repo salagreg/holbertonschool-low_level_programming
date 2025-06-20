@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* <nom de la fonction> - <explication de la fonction>
-* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
-* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+* void - vide
+* print_alphabet : affiche l'alphabet 10x
+* Return: aucune
 */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void) /** avoir l'alphabet 10 fois **/
 {
 	int i;
 	char c;
