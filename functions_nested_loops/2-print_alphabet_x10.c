@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* void - vide
-* print_alphabet : affiche l'alphabet 10x
-* Return: aucune
-*/
+ * print_alphabet_x10 - affiche l'alphabet
+ * void - neant
+ * Return: aucune
+ */
 void print_alphabet_x10(void) /** avoir l'alphabet 10 fois **/
 {
 	int i;
