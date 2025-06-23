@@ -1,0 +1,28 @@
+#include "main.h"
+/**
+* <nom de la fonction> - <explication de la fonction>
+* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
+* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+*/
+void more_numbers(void)
+{
+	int i;
+	int j;
+
+	for (i = 0 ; i < 10 ; i++)
+	{
+		for (j = 0 ; j <= 14 ; j++)
+		{
+			if (j > 9)
+			{
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
+			}
+			else
+			{
+				_putchar(j + '0');
+			}
+		}
+		_putchar('\n');
+	}
+}
