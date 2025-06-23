@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+* <nom de la fonction> - <explication de la fonction>
+* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
+* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+*/
+void print_most_numbers(void)
+{
+	int i;
+
+	for (i = 0 ; i <= 9 ; i++)
+	{
+		if (i != 2 && i != 4)
+		{
+			_putchar(i + '0');
+		}
+	}
+	_putchar('\n');
+}
