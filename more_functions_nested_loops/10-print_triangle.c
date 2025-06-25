@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* <nom de la fonction> - <explication de la fonction>
-* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
-* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+ * print_triangle - afficher triangle
+* @size: affiche les espaces et les #
+* Return: neant
 */
 void print_triangle(int size)
 {
