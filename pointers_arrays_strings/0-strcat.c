@@ -1,0 +1,28 @@
+#include "main.h"
+#include <stdio.h>
+/**
+* _strcat - concaténer deux chaines de caracteres
+* @dest : contient une chaine de caractere
+* @src : contient une chaine de caractere
+* Return: dest, retourner dest car on lui ajoute quelque chose
+*/
+char *_strcat(char *dest, char *src)
+{
+	int chaine1 = 0;
+	int chaine2 = 0;
+
+	/* Aller à la fin de dest */
+	while (dest[chaine2] != '\0')
+	{
+		chaine2++;
+	}
+	/* copier src dans dest */
+	for (chaine1 = 0; src[chaine1] != '\0' ; chaine1++)
+	{
+		dest[chaine2] = src[chaine1];
+		chaine2++;
+	}
+	/* ajouter caractere de fin à dest */
+	dest[chaine2] = '\0';
+	return (dest);
+}
