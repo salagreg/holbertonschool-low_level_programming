@@ -1,0 +1,27 @@
+#include "main.h"
+/**
+* <nom de la fonction> - <explication de la fonction>
+* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
+* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+*/
+unsigned int _strspn(char *s, char *accept)
+{
+	int i;
+	int j;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				break;
+			}
+		}
+		if (accept[j] == '\0')
+		{
+			return (i);
+		}
+	}
+	return (i);
+}
