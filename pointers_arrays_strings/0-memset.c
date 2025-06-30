@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+* _memset - remplir la mémoire avec un octet constant
+* @s: pointeur vers une zone mémoire
+* @b : caractère octet
+* @n : nombres d'octets à remplir
+* Return: s, pour la valeur pointée
+*/
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+/*boucle pour parcourir la mémoire*/
+	for (i = 0; i < n; i++)
+	{
+		/*remplir toutes les cases*/
+		s[i] = b;
+	}
+	return (s);
+}
