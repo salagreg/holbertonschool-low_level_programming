@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+* <nom de la fonction> - <explication de la fonction>
+* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
+* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+*/
+void print_chessboard(char (*a)[8])
+{
+	int i;
+	int j;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
+	}
+}
