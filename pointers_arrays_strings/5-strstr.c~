@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stddef.h>
+/**
+* <nom de la fonction> - <explication de la fonction>
+* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
+* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+*/
+char *_strstr(char *haystack, char *needle)
+{
+	int i;
+	int j;
+
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; needle[j] != '\0'; j++)
+		{
+			if (haystack[i] == needle[j])
+			{
+				return (needle);
+			}
+			/*
+			 *if (needle[j] == '\0')
+			 *{
+			 *	return (NULL);
+			 */
+		}
+	}
+	return (NULL);
+}
