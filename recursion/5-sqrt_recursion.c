@@ -1,20 +1,31 @@
 #include "main.h"
 /**
 * <nom de la fonction> - <explication de la fonction>
-* @<nom de l'argument>: <explication de l'argument> // Seulement s'il y a un ou plusieurs arguments
-* Return: <explication des valeurs de retour> // Seulement si la fonction retourne autre chose que void
+* @<nom de l'argument>: 
+* Return: 
 */
-int _sqrt_recursion(int n)
-{
-	int i = 0;
 
-	if (i * i > n)
+
+int _sqrt_idem(int n, int bis)
+{
+	if (bis * bis == n)
+	{
+		return (bis);
+	}
+	if (bis * bis > n)
 	{
 		return (-1);
 	}
-	if (i * 1 == n )
+}
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 0)
 	{
 		return (1);
 	}
-	return (n * _sqrt_recursion(i + 1));
+	return (n * _sqrt_idem(n + 1));
 }
