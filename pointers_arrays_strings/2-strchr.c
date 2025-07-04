@@ -10,12 +10,17 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	/*boucle pour parcourir ma chaine*/
+	/*boucle pour parcourir la chaine*/
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		/*condition pour localiser ou non le caractere*/
 		if (s[i] == c)
+		{
 			return	(&s[i]);
+		}
+		/*condition pour tester le caractère nul*/
+		if (s[i] == '\0')
+			break;
 	}
 	/*retourner null si pas de caractère*/
 	return (NULL);
