@@ -18,11 +18,11 @@ char *_strchr(char *s, char c)
 		{
 			return (&s[i]);
 		}
-		/*condition pour tester le caractère nul*/
-		if (c == '\0')
-		{
-			return (&s[i]);
-		}
+	}
+	/*condition pour tester le caractère nul*/
+	if (c == '\0')
+	{
+		return (&s[i]);
 	}
 	/*retourner null si pas de caractère*/
 	return (NULL);
