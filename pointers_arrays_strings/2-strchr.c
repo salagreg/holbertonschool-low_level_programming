@@ -16,11 +16,13 @@ char *_strchr(char *s, char c)
 		/*condition pour localiser ou non le caractere*/
 		if (s[i] == c)
 		{
-			return	(&s[i]);
+			return (&s[i]);
 		}
 		/*condition pour tester le caractère nul*/
-		if (s[i] == '\0')
-			break;
+		if (c == '\0')
+		{
+			return (&s[i]);
+		}
 	}
 	/*retourner null si pas de caractère*/
 	return (NULL);
