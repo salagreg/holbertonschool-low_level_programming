@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ *
+ *
+ *
+ *
+ */
+char *str_concat(char *s1, char *s2)
+{
+	int i, j;
+	char *ptr1 = s1;
+	char *ptr2 = s2;
+
+	if (ptr1 == NULL && ptr2 == NULL)
+		return (NULL);
+
+	for (i, j = 0; ptr1[i] != '\0' && ptr2[j] != '\0'; i++, j++)
+	{
+		ptr1[i] + ptr2[j];
+	}
+	ptr1 = malloc((i + 1) * sizeof(char));
+	ptr2 = malloc((j + 1) * sizeof(char));
+
+	if (ptr1 == NULL && ptr2 == NULL)
+		return (NULL);
+	ptr2[j] = '\0';
+	return (ptr2);
+}
