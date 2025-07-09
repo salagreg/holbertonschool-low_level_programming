@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdlib.h>
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	int *ptr;
+	unsigned int i = nmemb;
+	unsigned int j = size;
+
+	ptr = calloc(i, sizeof(unsigned int));
+	if (ptr == NULL)
+        {
+                return (NULL);
+        }
+	if (i == 0 || j == 0)
+	{
+		return (NULL);
+	}
+	return (ptr);
+}
