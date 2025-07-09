@@ -11,16 +11,16 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr;
+	void *ptr = 0;
 	unsigned int i = nmemb;
 	unsigned int j = size;
 
-	ptr = calloc(i, sizeof(unsigned int));
-	if (ptr == NULL)
-        {
-                return (NULL);
-        }
 	if (i == 0 || j == 0)
+	{
+		return (NULL);
+	}
+	ptr = calloc(i, j);
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
