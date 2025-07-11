@@ -2,10 +2,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
+ * _strdup - Duplicates a string in newly allocated memory
+ * @str: The source string to duplicate
  *
- *
- *
- *
+ * Return: A pointer to the duplicated string,
+ *         or NULL if str is NULL or if memory allocation fails
  */
 char *_strdup(char *str)
 {
@@ -19,7 +20,7 @@ char *_strdup(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 		;
 	/*allouer la memoire*/
-	newstr = malloc((i + 1) * sizeof (char));
+	newstr = malloc((i + 1) * sizeof(char));
 
 	if (newstr == NULL)
 		return (NULL);
