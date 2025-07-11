@@ -1,3 +1,5 @@
+#ifndef DOG_H
+#define DOG_H
 #include <stdio.h>
 /**
  * struct dog - Structure représentant un chien
@@ -8,8 +10,10 @@
  * Return≈©: Structure contenant les informations de base
  * sur un chien, incluant son nom, son âge et son propriétaire.
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
 };
+#endif
