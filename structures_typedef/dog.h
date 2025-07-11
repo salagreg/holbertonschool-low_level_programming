@@ -9,12 +9,12 @@
  * Return≈©: Structure contenant les informations de base
  * sur un chien, incluant son nom, son âge et son propriétaire.
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 #endif
