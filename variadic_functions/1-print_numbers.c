@@ -3,16 +3,12 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * print_numbers - Prints numbers followed by a separator
+ * print_numbers - Prints numbers separated by a string
  * @separator: The string to print between numbers
- * @n: The number of arguments to print
- * @...: A variable number of integers to print
+ * @n: The number of integers passed to the function
  *
- * Description: This function prints all given integers
- * separated by the given string. A newline is printed
- * at the end. If separator is NULL, no separator is used.
- *
- * Return: Nothing (void function)
+ * Return: Prints numbers followed by a new line.
+ * If separator is NULL, it is not printed.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
