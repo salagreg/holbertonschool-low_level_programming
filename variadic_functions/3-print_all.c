@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 				string = va_arg(arg, char *);
 				if (string == NULL)
 				{
-					printf("(nil)\n");
+					string = "(nil)\n";
 				}
 				printf("%s%s", separator, string);
 				break;
